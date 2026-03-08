@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 220 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 15%;
+
+    --primary: 220 40% 25%;
+    --primary-foreground: 40 33% 97%;
+
+    --secondary: 40 40% 92%;
+    --secondary-foreground: 220 30% 15%;
+
+    --muted: 40 20% 93%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 38 90% 55%;
+    --accent-foreground: 220 40% 12%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 40% 12%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 40% 25%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 220 40% 22%;
+    --sidebar-foreground: 40 33% 95%;
+    --sidebar-primary: 38 90% 55%;
+    --sidebar-primary-foreground: 220 40% 12%;
+    --sidebar-accent: 220 35% 30%;
+    --sidebar-accent-foreground: 40 33% 95%;
+    --sidebar-border: 220 30% 30%;
+    --sidebar-ring: 38 90% 55%;
+
+    --font-display: 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
